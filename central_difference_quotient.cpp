@@ -15,7 +15,7 @@ int main() {
     x[i] = x[i-1] + h;
   }
   for (i = 0; i <= n; i++) {
-    k = (F(x[i + 1]) - F(x[i - 1]))/ 2*h;
+    k = (F(x[i + 1]) - F(x[i - 1]))/ (2*h);
     if(i != 0 and i != n) printf("%d   %lf   %lf   %lf\n", i, x[i], F(x[i]), k);
     else {
         printf("%d   %lf   %lf   ", i, x[i], F(x[i]));
