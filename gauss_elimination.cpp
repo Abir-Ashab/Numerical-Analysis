@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-int main()
+int main(void)
 {
     int i, j, k, n;
     float A[20][20], c, x[10], sum = 0.0;
@@ -13,7 +13,6 @@ int main()
     {
         for (j = 1; j <= (n + 1); j++)
         {
-            printf("A[%d][%d] : ", i, j);
             scanf("%f", &A[i][j]);
         }
     }
